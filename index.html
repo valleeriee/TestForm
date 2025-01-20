@@ -70,9 +70,11 @@
                 </fieldset>
                 <fieldset class="form-bloc">
                     <legend class="label">Méthode de paiement <span aria-hidden="true">*</span></legend>
-                    <input type="radio" id="carte" name="paiement" aria-required="true" aria-describedby="errorPaiement"><label for="carte" class="label">Carte Visa</label>
-                    <input type="radio" id="paypal" name="paiement" aria-required="true"><label for="paypal" class="label">Paypal</label>
-                    <input type="radio" id="virement" name="paiement" aria-required="true"><label for="virement" class="label">Virement</label>
+                    <div role="radiogroup" aria-required="true" aria-describedby="errorPaiement">
+                        <input type="radio" id="carte" name="paiement"><label for="carte" class="label">Carte Visa</label>
+                        <input type="radio" id="paypal" name="paiement"><label for="paypal" class="label">Paypal</label>
+                        <input type="radio" id="virement" name="paiement"><label for="virement" class="label">Virement</label>
+                    </div>
                     <p class="txt-error" id="errorPaiement">Veuillez choisir un mode de paiement</p>
                 </fieldset>
                 <div class="form-bloc">
