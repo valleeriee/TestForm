@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exemple de formulaire de réservation">
+    <title>Formulaire de réservation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main class="middle">
+        <section class="page-form">
+			<h1 class="tt-h1">Formulaire de réservation</h1>
+            <form id="resaForm">
+                <div class="form-bloc">
+                    <label for="resaNom" class="label">Nom <span aria-hidden="true">*</span></label>
+                    <input type="text" id="resaNom" name="resaNom" aria-required="true">
+                    <p class="txt-error">Veuillez saisir un nom valide</p>
+                </div>
+                <div class="form-bloc">
+                    <label for="resaPrenom" class="label">Prénom <span aria-hidden="true">*</span></label>
+                    <input type="text" id="resaPrenom" name="resaPrenom" aria-required="true">
+                    <p class="txt-error">Veuillez saisir un prénom valide</p>
+                </div>
+                <div class="form-bloc">
+                    <label for="resaTel" class="label">Téléphone <span aria-hidden="true">*</span></label>
+                    <input type="tel" id="resaTel" name="resaTel" aria-required="true">
+                    <p class="txt-error">Veuillez saisir un numéro de téléphone valide</p>
+                </div>
+                <div class="form-bloc">
+                    <label for="resaEmail" class="label">Adresse email <span aria-hidden="true">*</span></label>
+                    <input type="email" id="resaEmail" name="resaEmail" aria-required="true">
+                    <p class="txt-error">Veuillez saisir une adresse email valide</p>
+                </div>
+                <div class="form-bloc">
+                    <label for="resaArrivee" class="label">Date d'arrivée <span aria-hidden="true">*</span></label>
+                    <input type="date" id="resaArrivee" name="resaArrivee" aria-required="true">
+                    <p class="txt-error">Veuillez saisir une date d'arrivée valide</p>
+                </div>
+                <div class="form-bloc">
+                    <label for="resaDepart" class="label">Date de départ <span aria-hidden="true">*</span></label>
+                    <input type="date" id="resaDepart" name="resaDepart" aria-required="true">
+                    <p class="txt-error">Veuillez saisir une date de départ valide</p>
+                </div>
+                <div class="form-bloc">
+                    <label for="resaVoyageurs" class="label">Nombre de voyageurs <span aria-hidden="true">*</span></label>
+                    <select id="resaVoyageurs" name="resaVoyageurs" class="select" aria-required="true">
+                        <option value="" disabled selected>Choisissez une option</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <p class="txt-error">Veuillez saisir un nombre de voyageurs</p>
+                </div>
+                <fieldset class="form-bloc">
+                    <legend class="label">Type de location <span aria-hidden="true">*</span></legend>
+                    <input type="checkbox" id="maison" aria-required="true"><label for="maison" class="label">Maison</label>
+                    <input type="checkbox" id="mobile" aria-required="true"><label for="mobile" class="label">Mobile home</label>
+                    <input type="checkbox" id="camping" aria-required="true"><label for="camping" class="label">Camping</label>
+                    <p class="txt-error">Veuillez choisir un ou plusieurs types de location</p>
+                </fieldset>
+                <fieldset class="form-bloc">
+                    <legend class="label">Méthode de paiement <span aria-hidden="true">*</span></legend>
+                    <input type="radio" id="carte" name="paiement" aria-required="true"><label for="carte" class="label">Carte Visa</label>
+                    <input type="radio" id="paypal" name="paiement" aria-required="true"><label for="paypal" class="label">Paypal</label>
+                    <input type="radio" id="virement" name="paiement" aria-required="true"><label for="virement" class="label">Virement</label>
+                    <p class="txt-error">Veuillez choisir un mode de paiement</p>
+                </fieldset>
+                <div class="form-bloc">
+                    <label for="resaNotes" class="label">Demandes particulières</label>
+                    <textarea id="resaNotes" name="resaNotes"></textarea>
+                </div>
+                <div class="bouton">
+                    <input type="submit" class="bt" id="btnSend" value="Envoyer">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
