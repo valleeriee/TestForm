@@ -166,6 +166,7 @@ textarea{resize:vertical;}
 		width: 100%;
 		height: 46px;
 		padding: 0 18px;
+		background-color: var(--colorWhite);
 		border: 1px solid var(--colorLine);
 		border-radius: 10px;
 		font-size: 12px;
