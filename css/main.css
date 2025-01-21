@@ -133,6 +133,16 @@ textarea{resize:vertical;}
 		font-weight: 500;
 	}
 
+	.form-bloc .label .aster {
+		font-size: 20px;
+		color: var(--colorError);
+	}
+
+	.form-bloc .label .desc {
+		font-size: 15px;
+		font-weight: 400;
+	}
+
 	div.form-bloc .label {
 		margin-bottom: 6px;
 		display: block;

@@ -19,37 +19,37 @@
 			<h1 class="tt-h1">Formulaire de réservation</h1>
             <form id="resaForm">
                 <div class="form-bloc">
-                    <label for="resaNom" class="label">Nom <span aria-hidden="true">*</span></label>
+                    <label for="resaNom" class="label">Nom <span class="aster" aria-hidden="true">*</span></label>
                     <input type="text" id="resaNom" name="resaNom" autocomplete="family-name" aria-required="true" aria-describedby="errorNom">
                     <p class="txt-error" id="errorNom">Veuillez saisir un nom valide</p>
                 </div>
                 <div class="form-bloc">
-                    <label for="resaPrenom" class="label">Prénom <span aria-hidden="true">*</span></label>
+                    <label for="resaPrenom" class="label">Prénom <span class="aster" aria-hidden="true">*</span></label>
                     <input type="text" id="resaPrenom" name="resaPrenom" autocomplete="given-name" aria-required="true" aria-describedby="errorPrenom">
                     <p class="txt-error" id="errorPrenom">Veuillez saisir un prénom valide</p>
                 </div>
                 <div class="form-bloc">
-                    <label for="resaTel" class="label">Téléphone <span aria-hidden="true">*</span></label>
+                    <label for="resaTel" class="label">Téléphone <span class="aster" aria-hidden="true">*</span> <span class="desc">(format : 01 23 45 67 89)</span></label>
                     <input type="tel" id="resaTel" name="resaTel" autocomplete="tel" aria-required="true" aria-describedby="errorTel">
-                    <p class="txt-error" id="errorTel">Veuillez saisir un numéro de téléphone valide au format 0123456789</p>
+                    <p class="txt-error" id="errorTel">Veuillez saisir un numéro de téléphone valide au format 01 23 45 67 89</p>
                 </div>
                 <div class="form-bloc">
-                    <label for="resaEmail" class="label">Adresse email <span aria-hidden="true">*</span></label>
+                    <label for="resaEmail" class="label">Adresse email <span class="aster" aria-hidden="true">*</span> <span class="desc">(format : nom@domaine.com)</span></label>
                     <input type="email" id="resaEmail" name="resaEmail" autocomplete="email" aria-required="true" aria-describedby="errorEmail">
                     <p class="txt-error" id="errorEmail">Veuillez saisir une adresse email valide au format nom@domaine.com</p>
                 </div>
                 <div class="form-bloc">
-                    <label for="resaArrivee" class="label">Date d'arrivée <span aria-hidden="true">*</span></label>
+                    <label for="resaArrivee" class="label">Date d'arrivée <span class="aster" aria-hidden="true">*</span> <span class="desc">(format : JJ/MM/AAAA)</span></label>
                     <input type="date" id="resaArrivee" name="resaArrivee" aria-required="true" aria-describedby="errorArrivee">
-                    <p class="txt-error" id="errorArrivee">Veuillez saisir une date d'arrivée valide au format jj/mm/aaaa</p>
+                    <p class="txt-error" id="errorArrivee">Veuillez saisir une date d'arrivée valide au format JJ/MM/AAAA</p>
                 </div>
                 <div class="form-bloc">
-                    <label for="resaDepart" class="label">Date de départ <span aria-hidden="true">*</span></label>
+                    <label for="resaDepart" class="label">Date de départ <span class="aster" aria-hidden="true">*</span> <span class="desc">(format : JJ/MM/AAAA)</span></label>
                     <input type="date" id="resaDepart" name="resaDepart" aria-required="true" aria-describedby="errorDepart">
-                    <p class="txt-error" id="errorDepart">Veuillez saisir une date de départ valide au format jj/mm/aaaa</p>
+                    <p class="txt-error" id="errorDepart">Veuillez saisir une date de départ valide au format JJ/MM/AAAA</p>
                 </div>
                 <div class="form-bloc">
-                    <label for="resaVoyageurs" class="label">Nombre de voyageurs <span aria-hidden="true">*</span></label>
+                    <label for="resaVoyageurs" class="label">Nombre de voyageurs <span class="aster" aria-hidden="true">*</span></label>
                     <select id="resaVoyageurs" name="resaVoyageurs" class="select" aria-required="true" aria-describedby="errorVoyageurs">
                         <option value="" disabled selected>Choisissez une option</option>
                         <option value="1">1</option>
@@ -62,14 +62,14 @@
                     <p class="txt-error" id="errorVoyageurs">Veuillez sélectionner un nombre de voyageurs</p>
                 </div>
                 <fieldset class="form-bloc">
-                    <legend class="label">Type de location <span aria-hidden="true">*</span></legend>
+                    <legend class="label">Type de location <span class="aster" aria-hidden="true">*</span></legend>
                     <input type="checkbox" id="maison" aria-required="true" aria-describedby="errorLocation"><label for="maison" class="label">Maison</label>
                     <input type="checkbox" id="mobile" aria-required="true"><label for="mobile" class="label">Mobile home</label>
                     <input type="checkbox" id="camping" aria-required="true"><label for="camping" class="label">Camping</label>
                     <p class="txt-error" id="errorLocation">Veuillez choisir un ou plusieurs types de location</p>
                 </fieldset>
                 <fieldset class="form-bloc">
-                    <legend class="label">Méthode de paiement <span aria-hidden="true">*</span></legend>
+                    <legend class="label">Méthode de paiement <span class="aster" aria-hidden="true">*</span></legend>
                     <div role="radiogroup" aria-required="true" aria-describedby="errorPaiement">
                         <input type="radio" id="carte" name="paiement"><label for="carte" class="label">Carte Visa</label>
                         <input type="radio" id="paypal" name="paiement"><label for="paypal" class="label">Paypal</label>
@@ -78,7 +78,7 @@
                     <p class="txt-error" id="errorPaiement">Veuillez choisir un mode de paiement</p>
                 </fieldset>
                 <div class="form-bloc">
-                    <label for="resaNotes" class="label">Demandes particulières</label>
+                    <label for="resaNotes" class="label">Demandes particulières <span class="desc">(facultatif)</span></label>
                     <textarea id="resaNotes" name="resaNotes"></textarea>
                 </div>
                 <div class="bouton">
