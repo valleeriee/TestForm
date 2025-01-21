@@ -87,10 +87,21 @@ textarea{resize:vertical;}
 
 	/* textes */
 	.tt-h1 {
-		margin-bottom: 26px;
+		margin-bottom: 20px;
 		font-family: var(--fontAlt);
         font-size: 32px;
         line-height: 34px;
+	}
+
+	.mandatory {
+		margin-bottom: 26px;
+		font-size: 16px;
+		font-style: italic;
+	}
+
+	.aster {
+		font-size: 20px;
+		color: var(--colorError);
 	}
 
 
@@ -131,11 +142,6 @@ textarea{resize:vertical;}
 
 	.form-bloc .label {
 		font-weight: 500;
-	}
-
-	.form-bloc .label .aster {
-		font-size: 20px;
-		color: var(--colorError);
 	}
 
 	.form-bloc .label .desc {
